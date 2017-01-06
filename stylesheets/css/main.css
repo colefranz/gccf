@@ -26,7 +26,14 @@ body, p, h1, h2, ul, li, a {
   text-align: center;
   padding: 0;
   height: 80px;
-  border-bottom: 2px solid #750875; }
+  border-bottom: 2px solid #530080; }
+  #header .logo {
+    position: absolute;
+    top: 5%;
+    left: 10px;
+    height: 90%;
+    line-height: 80px;
+    border-radius: 4px; }
   #header ul {
     display: inline-block;
     list-style: none;
@@ -40,17 +47,19 @@ body, p, h1, h2, ul, li, a {
       text-decoration: none;
       text-transform: uppercase;
       color: #d8d8d8;
-      background: #750875;
+      background: #530080;
       height: 60px;
+      line-height: 60px;
       width: 60px;
       padding: 3px;
       margin: 2px;
       transition: background 0.3s ease;
-      text-align: center; }
+      text-align: center;
+      border-radius: 4px; }
       #header ul li a:hover {
-        background: #8d0a8d; }
+        background: #64009a; }
       #header ul li a.active {
-        background: #a50ba5; }
+        background: #7400b3; }
 
 #main {
   position: absolute;
@@ -59,13 +68,10 @@ body, p, h1, h2, ul, li, a {
   bottom: 0;
   left: 0;
   text-align: center;
-  padding: 15px; }
-  #main .logo {
-    display: inline-block;
-    align: center;
-    width: 50%; }
+  padding: 15px;
+  overflow: auto; }
   #main .names {
-    color: #750875;
+    color: #530080;
     background: none; }
   #main .maintext {
     padding: 50px; }

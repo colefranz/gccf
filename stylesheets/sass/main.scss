@@ -1,5 +1,5 @@
 $header-height: 80px;
-$def-purple: #750875;
+$def-purple: #530080;
 $def-gray: #d8d8d8;
 
 html {
@@ -35,6 +35,15 @@ body, p, h1, h2, ul, li, a {
   height: $header-height;
   border-bottom: 2px solid $def-purple;
 
+  .logo {
+    position: absolute;
+    top: 5%;
+    left: 10px;
+    height: 90%;
+    line-height: $header-height;
+    border-radius: 4px;
+  }
+
   ul {
     display: inline-block;
     list-style: none;
@@ -52,11 +61,13 @@ body, p, h1, h2, ul, li, a {
         color: $def-gray;
         background: $def-purple;
         height: 60px;
+        line-height: 60px;
         width: 60px;
         padding: 3px;
         margin: 2px;
         transition: background 0.3s ease;
         text-align: center;
+        border-radius: 4px;
 
         &:hover {
           background: lighten($def-purple, 5%);
@@ -78,12 +89,7 @@ body, p, h1, h2, ul, li, a {
   left: 0;
   text-align: center;
   padding: 15px;
-
-  .logo {
-    display: inline-block;
-    align: center;
-    width: 50%;
-  }
+  overflow: auto;
 
   .names {
     color: $def-purple;
