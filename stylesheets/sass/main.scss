@@ -18,28 +18,64 @@ body {
   overflow-x: hidden;
 }
 
-body, p, h1, h2 {
-  font-family: 'Open Sans', sans-serif;
+body, p, h1, h2, ul, li, a {
+  font-family: 'Roboto Mono', monospace;
   margin: 0;
   padding: 0;
 }
 
 #header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 80px;
+  text-align: center;
   padding: 0;
   height: $header-height;
-  width: 100%; 
   border-bottom: 2px solid $def-purple;
 
-  #title {
-    font-size: 48px;
-    color: $def-purple;
-    text-align: center;
-    letter-spacing: 3px;
-    line-height: $header-height;
+  ul {
+    display: inline-block;
+    list-style: none;
+    height: $header-height;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    li {      
+      a {
+        display: block;
+        font-size: 40px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $def-gray;
+        background: $def-purple;
+        height: 60px;
+        width: 60px;
+        padding: 3px;
+        margin: 2px;
+        transition: background 0.3s ease;
+        text-align: center;
+
+        &:hover {
+          background: lighten($def-purple, 5%);
+        }
+
+        &.active {
+          background: lighten($def-purple, 10%);
+        }
+      }
+    }
   }
 }
 
 #main {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  bottom: 0;
+  left: 0;
   text-align: center;
   padding: 15px;
 
