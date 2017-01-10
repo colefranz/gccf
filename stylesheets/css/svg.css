@@ -1,0 +1,11 @@
+#bg-rect {
+  pointer-events: initial;
+  cursor: pointer; }
+
+#bg-rect:hover {
+  fill: #64009a; }
+
+g {
+  pointer-events: none; }
+
+/*# sourceMappingURL=svg.css.map */

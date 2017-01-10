@@ -1,0 +1,12 @@
+#bg-rect {
+	pointer-events: initial;
+	cursor: pointer;
+}
+
+#bg-rect:hover {
+	fill: lighten(#530080, 5%);
+}
+
+g {
+	pointer-events: none;
+}
